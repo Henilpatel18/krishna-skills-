@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🕉️ Lord Krishna Skills by Henil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Henil Patel">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #e0c3fc, #8ec5fc);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: bgFlow 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgFlow {
+      0% { background: radial-gradient(circle, #fbd3e9, #bb377d); }
+      100% { background: radial-gradient(circle, #c2e9fb, #a1c4fd); }
+    }
+
+    .title {
+      font-size: 38px;
+      color: #4b0082;
+      text-shadow: 2px 2px 8px #e0aaff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .shlok {
+      font-size: 18px;
+      color: #5c007a;
+      margin: 10px 40px 30px;
+      font-style: italic;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .btn {
+      text-decoration: none;
+      font-size: 20px;
+      padding: 15px 35px;
+      color: white;
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      border-radius: 50px;
+      box-shadow: 0 0 25px #a855f7;
+      animation: beat 2s infinite;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px #aa00ff;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">📜 Lord Krishna's Divine Skills</div>
+  <div class="shlok">“कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।”<br>— Bhagavad Gita</div>
+
+  <a class="btn" href="https://drive.google.com/file/d/1sl836FL6mmh5LvPZWteTz4PSqL7Rzy6j/view?usp=drive_link=download&id=YOUR_FILE_ID" target="_blank">
+    📥 Download Krishna PDF
+  </a>
+
+  <div class="footer">Made with 💜 by Henil Patel | <span id="date"></span></div>
+
+  <script>
+    // Current Year in Footer
+    document.getElementById("date").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
